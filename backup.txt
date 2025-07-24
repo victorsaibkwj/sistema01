@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria de Marcas</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      color: #333;
+    }
+
+    header {
+      background-color: #0b5394;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px 10px;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      width: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+      cursor: pointer;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+    }
+
+    .gallery-item img {
+      width: 100%;
+      display: block;
+    }
+
+    .caption {
+      padding: 10px;
+      text-align: center;
+      background-color: #f0f0f0;
+    }
+
+    .cta {
+      background: #fff;
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 2px solid #ccc;
+    }
+
+    .cta h2 {
+      margin: 0 0 10px;
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      font-size: 16px;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1ebe5d;
+    }
+
+    .load-more-container {
+      text-align: center;
+      padding: 20px;
+    }
+
+    #carregarMais {
+      background-color: #0b5394;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #carregarMais:hover {
+      background-color: #063d6c;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Galeria de Marcas PRECISA VENDER ENTRE EM CONTATO</h1>
+  </header>
+
+  <section class="gallery" id="gallery">
+    <!-- As imagens serão carregadas aqui via JavaScript -->
+  </section>
+
+  <div class="load-more-container">
+    <button id="carregarMais" onclick="renderGaleria()">Carregar mais</button>
+  </div>
+
+  <section class="cta">
+    <h2>Quer colocar sua marca aqui?</h2>
+    <p>Entre em contato com o administrador clicando no botão do WhatsApp abaixo.</p>
+  </section>
+
+  <a href="https://wa.me/5599999999999" target="_blank" class="whatsapp-button">
+    📱 WhatsApp
+  </a>
+
+  <script src="anuncios.js"></script>
+</body>
+</html>
